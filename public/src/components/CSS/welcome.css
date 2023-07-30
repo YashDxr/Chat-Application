@@ -1,0 +1,13 @@
+.welcome_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.welcome_container img{
+    height: 20rem;
+}
+.welcome_container span{
+    color: #4e00ff;
+}

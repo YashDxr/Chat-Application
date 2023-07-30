@@ -1,0 +1,58 @@
+/* .chatinput_container{
+    display: grid;
+    grid-template-columns: 5% 95%;
+    align-items: center;
+    background-color: #080420;
+    padding: 0 2rem;
+    padding-bottom: 0.3rem;
+}
+.chatinput_container .button-container{
+    display: flex;
+    align-items: center;
+    columns: white;
+    gap: 1rem;
+}
+.chatinput_container .button-container .emoji{
+    position: relative;
+}
+.chatinput_container .button-container .emoji svg{
+    font-size: 1.5rem;
+    color: #ffff00c8;
+    cursor: pointer;
+}
+.chatinput_container .input-container{
+    width: 100%;
+    border-radius: 2rem;
+    display: flex;
+    align-content: center;
+    gap: 2rem;
+    background-color: #ffffff34;
+}
+.chatinput_container .input-container input{
+    width: 90%;
+    height: 60%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+.chatinput_container .input-container input::selection{
+    background-color: #9186f3;
+}
+.chatinput_container .input-container input:focus{
+    outline: none;
+}
+.chatinput_container .input-container button{
+    padding: 0.3rem 2rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9a86f3;
+    border: none;
+}
+.chatinput_container .input-container button svg{
+    font-size: 2rem;
+    color: white;
+} */

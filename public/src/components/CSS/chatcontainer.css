@@ -1,0 +1,64 @@
+.chatcontainer_container{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-rows: 10% 78% 12%;
+    gap: 0.1rem;
+    overflow: hidden;
+}
+
+.chatcontainer_container .chat-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+.chatcontainer_container .chat-header .user-details{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.chatcontainer_container .chat-header .user-details .avatar img{
+    height: 3rem;
+}
+.chatcontainer_container .chat-header .user-details .username h3{
+    color: white;
+}
+.chatcontainer_container .chat-messages{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: auto;
+}
+.chatcontainer_container .chat-messages::-webkit-scrollbar{
+    width: 0.2rem;
+}
+.chatcontainer_container .chat-messages::-webkit-scrollbar-thumb{
+    background-color: #ffffff39;
+    width: 0.1rem;
+    border-radius: 1rem;
+}
+.chatcontainer_container .chat-messages .message{
+    display: flex;
+    align-items: center;
+}
+.chatcontainer_container .chat-messages .message .content{
+    max-width: 40%;
+    overflow-wrap: break-word;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    color: #d1d1d1;
+}
+.chatcontainer_container .chat-messages .sended{
+    justify-content: flex-end;
+}
+.chatcontainer_container .chat-messages .sended .content{
+    background-color: #4f04ff21;
+}
+
+@media screen and (min-width:720px) and (max-width: 1080px){
+    .chatcontainer_container{
+        grid-auto-rows: 15% 70% 15%;
+    }
+}
