@@ -1,5 +1,4 @@
-import React,{useState, useEffect} from 'react' 
-// import styled from 'styled-components'
+import React,{useState, useEffect} from 'react'
 import {useNavigate } from 'react-router-dom'
 import loader from "../assets/loader.gif"
 import {ToastContainer , toast} from 'react-toastify'
@@ -45,7 +44,7 @@ export default function SetAvatar() {
                 localStorage.setItem("chat-app-user" , JSON.stringify(user))
                 navigate('/')
             }else{
-                toast.error("Error setting avatar. Please try again",toastOptions)
+                toast.error("Please Click again for Security Reasons!",toastOptions)
             }
         }
         
@@ -59,7 +58,6 @@ export default function SetAvatar() {
             const buffer = new Buffer(image.data);
             data.push(buffer.toString("base64"));
         }
-        // return () => {};
         setAvatars(data);
         setIsLoading(false);
         }
@@ -67,23 +65,6 @@ export default function SetAvatar() {
         useEffect(() =>{
          doSomething();
         },[])
-
-
-
-    // useEffect(async() => {
-    //     const data =[];
-    //     for(let i = 0  ; i<4 ; i++){
-    //         const image = await axios.get(
-    //             `${api}/${Math.round(Math.random() * 1000)}`
-    //         );
-    //         const buffer = new Buffer(image.data);
-    //         data.push(buffer.toString("base64"));
-    //     }
-    //     // return () => {};
-    //     setAvatars(data);
-    //     setIsLoading(false);
-    // }, []);
-
   return (
     <>
     {

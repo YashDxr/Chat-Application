@@ -6,11 +6,13 @@
     justify-content: center;
     gap: 1rem;
     align-items: center;
+    background-color: rgb(253, 253, 169);
     background-color: #131324;
 }
 .chat_container .container {
     height: 85vh;
     width: 85vw;
+    /* background-color: green; */
     background-color: #00000076;
     display: grid;
     grid-template-columns: 25% 75%;
