@@ -32,10 +32,7 @@ function Login() {
     event.preventDefault();
     if(handleValidation()){
       const {password , username} = values;
-      const {data} = await axios.post(loginRoute,{
-        username,
-        password,
-      });
+      const {data} = await axios.post(loginRoute,{username,password,});
       if(data.status === false){
         toast.error(data.msg, toastOptions);
       }
@@ -64,6 +61,7 @@ function Login() {
   };
   return (
     <>
+    <ToastContainer />
       <FormContainer>
         <form onSubmit={(event) => handleSubmit(event)}>
           <div className="brand">
@@ -75,7 +73,6 @@ function Login() {
             placeholder='Username' 
             name='username' 
             onChange={(e) => handleChange(e)} 
-            min="3"
           />
           <input 
             type="password" 
@@ -89,7 +86,7 @@ function Login() {
           </span>
         </form>
       </FormContainer>
-      <ToastContainer />
+      
     </>
   )
 }
